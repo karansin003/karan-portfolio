@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Kumar — Software Engineer &amp; DSA</title>
+<meta name="description" content="Karan Kumar — B.Tech CSE (AI/ML), Quantum University. Java, systems, and algorithms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<nav>
+  <a href="#top" class="logo">KARAN<span>.</span>KK</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#cp">Practice</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:14px;">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
+    </button>
+    <button class="nav-mobile-toggle" id="navMobileToggle" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="graph-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-eyebrow eyebrow">B.Tech CSE (AI/ML) · Quantum University</div>
+    <h1>
+      <span class="line"><span>KARAN</span></span>
+      <span class="line"><span>KUMAR</span></span>
+    </h1>
+    <p class="hero-role">Java-focused developer working with <strong>C++, Python, and C</strong>. I build software, strengthen my DSA fundamentals, and improve through consistent problem-solving practice.</p>
+    <div class="hero-meta">
+      <div>Primary language<b>Java</b></div>
+      <div>Also using<b>C++ · Python · C</b></div>
+      <div>Based in<b>Dehradun, India</b></div>
+    </div>
+  </div>
+  <button class="scroll-cue" id="scrollCue" type="button" aria-label="Scroll to About section"><div class="bar"></div>Scroll</button>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">About</div>
+      <h2>Third-year Computer Science student, <br>building strong foundations in software development.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="about-statement">I enjoy understanding what happens beneath the interface — <span class="fade">from algorithms and data structures to backend logic and machine learning fundamentals.</span></p>
+        <p class="about-body">I'm a third-year B.Tech Computer Science &amp; Engineering student specializing in AI &amp; ML at Quantum University. Java is my primary language, and I also work with C++, Python, C, and SQL. I'm focused on building strong fundamentals in data structures, algorithms, backend development, and problem solving.</p>
+      </div>
+      <div class="about-side reveal">
+        <div class="about-photo">
+          <img src="myphoto.png" alt="Karan Kumar" id="profilePhoto"
+               onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <span class="mono">myphoto.png</span>
+            <p>Drop a file named <strong>myphoto.png</strong> into this same folder (next to index.html) and it'll show up here automatically.</p>
+          </div>
+        </div>
+        <div class="fact"><div class="k">Institution</div><div class="v">Quantum University</div></div>
+        <div class="fact"><div class="k">Programme</div><div class="v">B.Tech CSE — AI &amp; ML</div></div>
+        <div class="fact"><div class="k">Duration</div><div class="v">2024 — 2028</div></div>
+        <div class="fact"><div class="k">Primary language</div><div class="v">Java</div></div>
+        <div class="fact"><div class="k">Also known</div><div class="v">C++ · Python · C</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Expertise</div>
+      <h2>What I work with.</h2>
+    </div>
+    <div class="skills-cols">
+      <div class="skill-group reveal">
+        <div class="eyebrow">Languages</div>
+        <ul class="skill-list">
+          <li>Java <span class="tag">Primary</span></li>
+          <li>C++ <span class="tag">STL / Memory</span></li>
+          <li>Python <span class="tag">Scripting</span></li>
+          <li>C <span class="tag">Procedural</span></li>
+          <li>SQL <span class="tag">Relational DB</span></li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <div class="eyebrow">Data Structures &amp; Algorithms</div>
+        <ul class="skill-list">
+          <li>Graph Theory <span class="tag">Dijkstra / BFS / DFS</span></li>
+          <li>Dynamic Programming <span class="tag">Memoization</span></li>
+          <li>Trees &amp; Heaps <span class="tag">Traversal</span></li>
+          <li>Recursion <span class="tag">Backtracking</span></li>
+          <li>Complexity <span class="tag">Big-O</span></li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <div class="eyebrow">Tools &amp; Practices</div>
+        <ul class="skill-list">
+          <li>Git &amp; GitHub <span class="tag">Version control</span></li>
+          <li>OOP <span class="tag">Java</span></li>
+          <li>Multithreading <span class="tag">Java</span></li>
+          <li>Pandas / NumPy <span class="tag">Python</span></li>
+          <li>Scikit-Learn <span class="tag">Python</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Selected Projects</div>
+      <h2>Projects I've built.</h2>
+    </div>
+
+    <div class="project reveal">
+      <div class="project-media"><canvas class="proj-canvas" data-variant="grid"></canvas></div>
+      <div>
+        <div class="project-num">01 — Applied / Data</div>
+        <h3>Carbon Footprint Calculator</h3>
+        <p class="project-desc">A tool that estimates a household or individual's carbon footprint from everyday inputs — travel, energy, and consumption — and turns the number into something actionable.</p>
+        <div class="stack"><span>Python</span><span>Data Modelling</span></div>
+        <a class="project-link" href="https://github.com/karansin003/carbon-footprint-calculator" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+
+    <div class="project reveal">
+      <div class="project-media"><canvas class="proj-canvas" data-variant="table"></canvas></div>
+      <div>
+        <div class="project-num">02 — Backend / OOP</div>
+        <h3>Student Management System</h3>
+        <p class="project-desc">A Java OOP application for managing student records — enrollment, grades, and attendance — built around a clean, extensible class architecture rather than a quick script.</p>
+        <div class="stack"><span>Java</span><span>OOP</span><span>File I/O</span></div>
+        <a class="project-link" href="https://github.com/karansin003/student-management-system" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="cp">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Competitive Programming</div>
+      <h2>Practice, pulled live — not typed in by hand.</h2>
+      <p class="about-body" style="margin-top:16px;">This section connects to a small backend that reads your LeetCode profile. The solved count and practiced topics update automatically when the backend is running.</p>
+    </div>
+
+    <div class="cp-block reveal">
+      <div class="cp-stat">
+        <div class="num" id="leetcodeCount">243</div>
+        <div class="lbl">Problems solved on LeetCode</div>
+        <div class="data-source mono" id="dataSourceTag">source: static fallback</div>
+      </div>
+      <div class="cp-links">
+        <a href="https://leetcode.com/u/karansin8672/" target="_blank" rel="noopener">LeetCode Profile <small>karansin8672</small></a>
+        <a href="https://github.com/karansin003/karansin003-leetcode" target="_blank" rel="noopener">Solutions Repository <small>GitHub</small></a>
+        <a href="https://codolio.com/profile/karansin" target="_blank" rel="noopener">Codolio Tracker <small>karansin</small></a>
+      </div>
+    </div>
+
+    <div class="topics-wrap reveal">
+      <div class="eyebrow" style="margin-bottom:20px;">Topics practiced</div>
+      <div id="topicBubbles" class="topic-bubbles">
+        <p class="topics-empty mono">Live LeetCode topic counts will appear here when the portfolio backend is running.</p>
+      </div>
+      <div class="bubble-tooltip" id="bubbleTooltip"></div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Timeline</div>
+      <h2>Where this is headed.</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-year mono">2024</div>
+        <h4>Started B.Tech CSE (AI/ML)</h4>
+        <p>Enrolled at Quantum University. Built the foundation in C, data structures, and discrete math.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year mono">2025</div>
+        <h4>Moved into Java &amp; algorithms</h4>
+        <p>Made Java my primary language. Deepened DSA practice — graphs, DP, trees — alongside C++ and Python.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year mono">2026</div>
+        <h4>Third year — consistent practice</h4>
+        <p>Built the Carbon Footprint Calculator and Student Management System while continuing regular DSA practice on LeetCode.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year mono">2028</div>
+        <h4>Graduating — open to opportunities</h4>
+        <p>Targeting roles at the intersection of backend systems (Java) and applied ML.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="eyebrow reveal">Contact</div>
+    <h2 class="reveal" style="margin-top:20px;">Open to internships, <br>collaboration, and hard problems.</h2>
+    <div class="contact-links reveal">
+      <a href="mailto:karansin8672@gmail.com">Email — karansin8672@gmail.com</a>
+      <a href="https://github.com/karansin003" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/java-karan-kumar/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://leetcode.com/u/karansin8672/" target="_blank" rel="noopener">LeetCode</a>
+      <a href="https://x.com/KaranKumar51768" target="_blank" rel="noopener">X / Twitter</a>
+    </div>
+    <a class="contact-cta reveal" id="contactCta" href="mailto:karansin8672@gmail.com">Start a conversation →</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>KARAN KUMAR · B.Tech CSE (AI/ML) · Quantum University 2024—2028 · India</p>
+    <a href="#top" class="back-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
