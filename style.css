@@ -276,10 +276,11 @@ section{padding:150px 0;position:relative;}
 .project:last-child{border-bottom:1px solid var(--border-soft);}
 .project:nth-child(even) .project-media{order:2;}
 .project-media{
-  aspect-ratio:4/3;border-radius:4px;overflow:hidden;position:relative;
+  aspect-ratio:16/9;border-radius:4px;overflow:hidden;position:relative;
   background:var(--bg-card);border:1px solid var(--border);
 }
 .project-media canvas{width:100%;height:100%;display:block;}
+.project-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
 .project-num{font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--accent);}
 .project h3{font-size:clamp(1.6rem,3vw,2.3rem);margin-top:14px;}
 .project-desc{color:var(--text-dim);margin-top:18px;line-height:1.75;max-width:460px;}
