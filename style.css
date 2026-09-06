@@ -100,6 +100,10 @@ nav{
   font-family:'IBM Plex Serif',serif;
   font-weight:700;font-size:1.05rem;
   letter-spacing:-0.01em;
+  display:flex;align-items:center;gap:9px;
+}
+.logo-img{
+  height:26px;width:auto;display:block;
 }
 .logo span{color:var(--accent);}
 .nav-links{display:flex;gap:34px;align-items:center;}
@@ -389,13 +393,16 @@ section{padding:150px 0;position:relative;}
 }
 .contact-links a:hover{color:var(--accent);}
 .contact-cta{
-  display:inline-flex;align-items:center;gap:12px;margin-top:56px;
+  display:inline-flex;align-items:center;gap:12px;margin-top:20px;margin-right:16px;
   padding:18px 30px;border:1px solid var(--border);border-radius:40px;
   font-family:'IBM Plex Mono',monospace;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;
   transition:border-color .3s ease, background .3s ease;
   background:none;cursor:pointer;color:var(--text);
 }
+.contact-cta:first-of-type{margin-top:56px;}
 .contact-cta:hover{border-color:var(--accent);background:var(--bg-card);}
+.contact-cta-secondary{color:var(--text-dim);}
+.contact-cta-secondary:hover{color:var(--text);}
 
 footer{
   border-top:1px solid var(--border-soft);
