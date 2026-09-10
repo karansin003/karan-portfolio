@@ -4,8 +4,25 @@
 const root = document.documentElement;
 const themeToggle = document.getElementById('themeToggle');
 
+const favicon32 = document.getElementById('favicon32');
+const favicon16 = document.getElementById('favicon16');
+const favicon180 = document.getElementById('favicon180');
+
+function applyFavicon(theme) {
+  // light.png (black K) reads best in light-mode browser tabs,
+  // dark.png (white K) reads best in dark-mode browser tabs.
+  const suffix = theme === 'dark' ? 'dark' : 'light';
+
+  if (favicon32) favicon32.href = `favicon-32-${suffix}.png`;
+  if (favicon16) favicon16.href = `favicon-16-${suffix}.png`;
+  if (favicon180) favicon180.href = `favicon-180-${suffix}.png`;
+}
+
 const savedTheme = localStorage.getItem('kk-theme');
-root.setAttribute('data-theme', savedTheme || 'dark');
+const initialTheme = savedTheme || 'dark';
+
+root.setAttribute('data-theme', initialTheme);
+applyFavicon(initialTheme);
 
 themeToggle.addEventListener('click', () => {
   const next =
@@ -13,6 +30,7 @@ themeToggle.addEventListener('click', () => {
 
   root.setAttribute('data-theme', next);
   localStorage.setItem('kk-theme', next);
+  applyFavicon(next);
 });
 
 

@@ -103,8 +103,12 @@ nav{
   display:flex;align-items:center;gap:9px;
 }
 .logo-img{
-  height:26px;width:auto;display:block;
+  height:26px;width:auto;
+  display:none;
 }
+/* Show the logo variant matching the active theme (data-theme is set on <html>) */
+[data-theme="light"] .logo-img-light{ display:block; }
+[data-theme="dark"] .logo-img-dark{ display:block; }
 .logo span{color:var(--accent);}
 .nav-links{display:flex;gap:34px;align-items:center;}
 .nav-links a{

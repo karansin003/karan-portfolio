@@ -1,20 +1,3 @@
-// server.js
-// Small backend for the portfolio: serves the static site AND exposes
-// two endpoints that pull real, live data from LeetCode's public
-// GraphQL API for your profile. Run this instead of just opening
-// index.html directly if you want the "solved count" and "topics
-// practiced" section to update automatically as you solve problems.
-//
-// Setup:
-//   npm install
-//   node server.js
-//   open http://localhost:4000
-//
-// Deploy (so it's live on the internet, not just your laptop):
-//   GitHub Pages CANNOT run this — it only serves static files.
-//   Use Render, Railway, Fly.io, or a small VPS. Set the start
-//   command to `node server.js` and it will serve the whole site.
-
 import express from 'express';
 import cors from 'cors';
 import fetch from 'node-fetch';
